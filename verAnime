@@ -1,0 +1,24 @@
+class Anime:
+    pass
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+anime1 = Anime("The Beginning After The End")
+anime2 = Anime("Dragon Ball Z")
+
+class Otaku1(Anime):
+    pass
+    def verAnime():
+        return "El Otaku ve el anime de {}".format(anime1.nombre)
+
+class Otaku2(Anime):
+    pass
+    def verAnime():
+        return "El Otaku ve el anime de {}".format(anime2.nombre)
+
+
+
+espectador1 = Otaku1
+espectador2 = Otaku2
+print(espectador1.verAnime())
+print(espectador2.verAnime())
