@@ -1,0 +1,22 @@
+class Libro:
+    pass
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+libro1 = Libro("50 sombras de Grey")
+libro2 = Libro("Don Quijote de la Mancha")
+
+class Persona1(Libro):
+    pass
+    def leerLibro():
+        return "El lector lee el libro de {}".format(libro1.nombre)
+
+class Persona2(Libro):
+    pass
+    def leerLibro():
+        return "El lector lee el libro de {}".format(libro2.nombre)
+
+lectura1 = Persona1
+lectura2 = Persona2
+print(lectura1.leerLibro())
+print(lectura2.leerLibro())
